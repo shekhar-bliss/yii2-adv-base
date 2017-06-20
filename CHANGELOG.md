@@ -1,3 +1,13 @@
+0.2 June 20, 2017
+-----------------------------
+
+- Added AdminLTE Theme
+- Added Yii2-user module
+- Official modules used in this version:
+  - [AdminLTE Asset Bundle](https://github.com/dmstr/yii2-adminlte-asset)
+  - [Yii2-user](https://github.com/dektrium/yii2-user)
+
+
 0.1 June 20, 2017
 -----------------------------
 
