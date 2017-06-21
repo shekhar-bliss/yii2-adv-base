@@ -37,7 +37,8 @@
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
-                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+                    ['label' => 'Yii2-user Signup', 'url' => ['/user/registration/register'], 'visible' => Yii::$app->user->isGuest],
+                    ['label' => 'Yii2-user Login', 'url' => ['/user/security/login'], 'visible' => Yii::$app->user->isGuest],
                     [
                         'label' => 'Same tools',
                         'icon' => 'share',
