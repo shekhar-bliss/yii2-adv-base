@@ -41,10 +41,10 @@ return [
         ],
         'view' => [
             'theme' => [
-                'basePath' => '@app/themes/basic',
-                'baseUrl' => '@web/themes/basic',
+                'basePath' => '@app/themes/adminlte',
+                'baseUrl' => '@web/themes/adminlte',
                 'pathMap' => [
-                    '@app/views' => '@app/themes/basic',
+                    '@app/views' => '@app/themes/adminlte',
                 ],
             ],
         ],
