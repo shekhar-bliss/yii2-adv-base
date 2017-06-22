@@ -51,4 +51,12 @@ return [
         ],
     ],
     'params' => $params,
+    'modules' => [
+        'user' => [
+            'class' => 'dektrium\user\Module',
+            'controllerMap' => [
+                'registration' => 'frontend\controllers\user\RegistrationController'
+            ],
+        ],
+    ],
 ];
