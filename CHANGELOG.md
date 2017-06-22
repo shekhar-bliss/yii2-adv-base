@@ -1,3 +1,13 @@
+0.3 June 22, 2017
+-----------------------------
+
+- Added Custom AdminLTE as a theme.
+- Added AdminLTE as a theme.
+- Added Basic Bootstrap as a theme.
+- Added Theming functionality.
+- Official modules used in this version:
+  - [Theming-documentation](http://www.yiiframework.com/doc-2.0/guide-output-theming.html)
+
 0.2 June 20, 2017
 -----------------------------
 
