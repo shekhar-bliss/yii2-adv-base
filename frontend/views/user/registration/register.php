@@ -21,34 +21,67 @@ use yii\widgets\ActiveForm;
 $this->title = Yii::t('user', 'Sign up');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="row">
-    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?= Html::encode($this->title) ?> Overridden</h3>
-            </div>
-            <div class="panel-body">
-                <?php $form = ActiveForm::begin([
-                    'id' => 'registration-form',
-                    'enableAjaxValidation' => true,
-                    'enableClientValidation' => false,
-                ]); ?>
 
-                <?= $form->field($model, 'email') ?>
-
-                <?= $form->field($model, 'username') ?>
-
-                <?php if ($module->enableGeneratingPassword == false): ?>
-                    <?= $form->field($model, 'password')->passwordInput() ?>
-                <?php endif ?>
-
-                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block']) ?>
-
-                <?php ActiveForm::end(); ?>
+<?= $this->render('/_alert', ['module' => $module]); ?>
+<body class="login-bg">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="login-box">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card card-container">
+                                    <img id="profile-img" class="profile-img-card" src="">
+                                    <p id="profile-name" class="profile-name-card"><?= Html::encode($this->title) ?></p>
+                                    <?php $form = ActiveForm::begin([
+                                    'id' => 'login-form',
+                                    'enableAjaxValidation' => true,
+                                    'enableClientValidation' => false,
+                                    'validateOnBlur' => false,
+                                    'validateOnType' => false,
+                                    'validateOnChange' => false,
+                                    'options' => [
+                                    'class' => 'form-signin'
+                                    ]
+                                    ]) ?>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                    <?= $form->field($model, 'username',['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control','placeholder'=>$model->getAttributeLabel('username'),'required' => 'required']])->label(false) ?>
+                                    </div>
+                                    <div class="col-xs-6">
+                                    <?= $form->field($model, 'email',['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control','placeholder'=>$model->getAttributeLabel('email'),'required' => '']])->label(false) ?>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                    <?= $form->field($model, 'password',['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control','placeholder'=>$model->getAttributeLabel('password'),'required' => 'required']])->passwordInput()->label(false) ?>
+                                    </div>
+                                    <div class="col-xs-6">
+                                    <?= $form->field($model, 'password',['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control','placeholder'=>'Confirm','required' => 'required']])->passwordInput()->label(false) ?>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-4">
+                                    <?= Html::submitButton(Yii::t('user', 'Register'), ['class' => 'btn btn-success btn-block btn-signin']) ?>
+                                    </div>
+                                    <div class="col-md-2">
+                                    <?php echo Html::a(
+                                    Yii::t('user', 'User Login'),
+                                    ['/user/security/login'],
+                                    ['class' => 'btn btn-lg btn-block new-user']
+                                    ); ?>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+                                <?php ActiveForm::end(); ?><!-- /form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <p class="text-center">
-            <?= Html::a(Yii::t('user', 'Already registered? Sign in!'), ['/user/security/login']) ?>
-        </p>
     </div>
 </div>
