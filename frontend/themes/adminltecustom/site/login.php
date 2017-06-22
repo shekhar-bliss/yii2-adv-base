@@ -19,7 +19,6 @@ $fieldOptions2 = [
 ];
 ?>
 
-
   <body class="login-bg">
     <div>
         <div class="container">

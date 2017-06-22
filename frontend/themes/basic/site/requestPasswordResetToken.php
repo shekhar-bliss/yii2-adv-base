@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-request-password-reset">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Basic Theme:</p>
+    <p>This is Basic Theme page.</p>
 
     <p>Please fill out your email. A link to reset password will be sent there.</p>
 

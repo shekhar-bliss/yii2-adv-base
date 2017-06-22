@@ -10,12 +10,11 @@ $this->title = 'My Yii Application';
         <h1>Congratulations!</h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii .This is Basic Theme page</a></p>
     </div>
 
     <div class="body-content">
-        <p>Basic Theme:</p>
+
         <div class="row">
             <div class="col-lg-4">
                 <h2>Heading</h2>

@@ -6,8 +6,7 @@ use yii\helpers\Html;
 /* @var $content string */
 
 dmstr\web\AdminLteAsset::register($this);
-frontend\assets\AdminLteCustomAsset::register($this);;
-
+frontend\assets\AdminLteCustomAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

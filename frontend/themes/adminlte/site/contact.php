@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        This is Basic Theme page. If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+        This is AdminLTE Theme page. If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
     </p>
 
     <div class="row">
