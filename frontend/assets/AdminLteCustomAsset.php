@@ -9,8 +9,7 @@ use yii\web\AssetBundle;
  */
 class AdminLteCustomAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+	public $sourcePath = '@app/themes/adminltecustom';
     public $css = [
         'css/custom-style.css',
     ];
