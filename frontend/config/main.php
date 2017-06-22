@@ -39,6 +39,15 @@ return [
             'rules' => [
             ],
         ],
+        'view' => [
+            'theme' => [
+                'basePath' => '@app/themes/adminltecustom',
+                'baseUrl' => '@web/themes/adminLtecustom',
+                'pathMap' => [
+                    '@app/views' => '@app/themes/adminltecustom',
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];
