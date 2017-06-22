@@ -45,6 +45,7 @@ return [
                 'baseUrl' => '@web/themes/adminLtecustom',
                 'pathMap' => [
                     '@app/views' => '@app/themes/adminltecustom',
+                    '@dektrium/user/views' => '@app/views/user',
                 ],
             ],
         ],
